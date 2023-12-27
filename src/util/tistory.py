@@ -11,7 +11,7 @@ def post(title, html, published=datetime.now()):
     'published': published,
     'title':title,
     'content':html,
-    'visibility':True,
+    'visibility': 2,
     }
 
     response = requests.post('https://www.tistory.com/apis/post/write', data=data)
